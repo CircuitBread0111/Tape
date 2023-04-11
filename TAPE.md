@@ -22,7 +22,7 @@ B: Represents a blank cell
 ### Syntax
 |Directives|Function|
 |-|-|
-|LEN|length of tape|
+|LEN|length of tape (max 8192)|
 |TAPE|start state of tape|
 |START|start of instructions|
 |END|end of program|
@@ -31,11 +31,12 @@ B: Represents a blank cell
 | ------------ | --------- | ----------------------------------------------- |
 | CHECK        | 0, 1, B   | check value and skip conditionally if not equal |
 |WRITE|0, 1, B|write a given value to the tape|
-|JUMP|label||
-|HALT ||stop execution|
 |RIGHT|NUM|number of movements right|
 |LEFT|NUM|number of movements left|
+|JUMP|label|jump to another point in the program|
 |PRINT||prints the current status of the tape|
+|HALT ||stop execution|
+|NOP||do nothing|
 
 | Other Syntax |
 | ------------------ |
